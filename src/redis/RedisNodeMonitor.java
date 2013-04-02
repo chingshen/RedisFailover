@@ -23,7 +23,6 @@ import redis.clients.jedis.exceptions.JedisConnectionException;
 /*
  * Launch a redis server on localhost:
  * e.g. src/redis-server ./redis1.conf
- * e.g. src/redis-server ./redis2.conf
  * 
  * Launch a RedisNodeMonitor:
  * java -cp .:../lib/zookeeper-3.4.5.jar:../lib/slf4j-api-1.6.1.jar:../lib/slf4j-log4j12-1.6.1.jar:../lib/log4j-1.2.15.jar:../lib/jedis-2.1.0.jar redis/RedisNodeMonitor localhost 6001 

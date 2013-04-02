@@ -20,12 +20,16 @@ import org.slf4j.LoggerFactory;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.exceptions.JedisConnectionException;
 
-/*
- * Launch a redis server on localhost:
+/**
+ * Usage:
+ * 1. Launch a redis server on localhost
  * e.g. src/redis-server ./redis1.conf
  * 
- * Launch a RedisNodeMonitor:
- * java -cp .:../lib/zookeeper-3.4.5.jar:../lib/slf4j-api-1.6.1.jar:../lib/slf4j-log4j12-1.6.1.jar:../lib/log4j-1.2.15.jar:../lib/jedis-2.1.0.jar redis/RedisNodeMonitor localhost 6001 
+ * 2. Launch a RedisNodeMonitor:
+ * java -cp .:../lib/zookeeper-3.4.5.jar:../lib/slf4j-api-1.6.1.jar:../lib/slf4j-log4j12-1.6.1.jar:../lib/log4j-1.2.15.jar:../lib/jedis-2.1.0.jar redis/RedisNodeMonitor localhost 6001
+ * 
+ *  Developer: Ching-Shen Chen
+ *  Date: 04/02/2013
  */
 
 public class RedisNodeMonitor implements Watcher,
